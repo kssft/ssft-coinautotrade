@@ -2,8 +2,6 @@ import pyupbit
 import time
 import datetime
 
-from pyupbit.exchange_api import Upbit 
-
 def cal_target(ticker):
     df = pyupbit.get_ohlcv(ticker, "day")
     yesterday = df.iloc[-2]
